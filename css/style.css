@@ -40,7 +40,7 @@ a {
 }
 
 /*HEADER*/
-#bandeauSup {
+#navbar {
     display: flex;
     justify-content: space-between;
 }
@@ -48,10 +48,6 @@ a {
 header #logo {
     padding: 20px 0px 50px 0px;
     width: 70px;
-}
-
-#headerGap{
-    margin: auto;
 }
 
 nav{
@@ -85,11 +81,11 @@ header nav ul li:hover a {
     color:  var(--main-color);
 }
 
-.searchBar{
+.search-bar{
     padding: 10px 0px 10px 0px;
 }
 
-#filtres{
+.filter-bar{
     display: inline-flex;
     align-items: center;
 }
