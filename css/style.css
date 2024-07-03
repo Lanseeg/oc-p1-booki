@@ -22,8 +22,16 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
+}
+
+h1{
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+h2{
+    font-size: 18px;
 }
 
 a {
@@ -38,8 +46,8 @@ a {
 }
 
 header #logo {
-    padding: 10px 0px 50px 0px;
-    width: 80px;
+    padding: 20px 0px 50px 0px;
+    width: 70px;
 }
 
 #headerGap{
@@ -76,8 +84,19 @@ header nav ul li a {
 header nav ul li:hover a {
     color:  var(--main-color);
 }
-/* */
 
+.searchBar{
+    padding: 10px 0px 10px 0px;
+}
+
+#filtres{
+    display: inline-flex;
+    align-items: center;
+}
+
+.lookUp{
+
+}
 /*FIN HEADER*/ 
 
 .section-title {
