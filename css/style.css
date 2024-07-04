@@ -189,7 +189,7 @@ header nav ul li:hover a {
 /*FIN HEADER*/
 
 /*MAIN*/
-
+/*INFO-BAR*/
 .info-bar {
     box-sizing: border-box;
     padding-bottom: 20px;
@@ -209,12 +209,10 @@ header nav ul li:hover a {
     justify-content: center;
     align-items: center;
 }
+/*END INFO-BAR*/
 
-.section-title {
-    margin: 0;
-    font-size: 1.4rem;
-}
-
+/*SECTION & CARDS*/
+/*CARDS SETUP*/
 .card {
     background-color: white;
     border-radius: 20px;
@@ -237,8 +235,7 @@ header nav ul li:hover a {
 .neutral-star {
     color: var(--main-bg-color)
 }
-
-
+/*END OF CARDS SETUP*/
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -251,18 +248,60 @@ header nav ul li:hover a {
     padding: 30px;
     box-sizing: border-box;
 }
+.section-title {
+    margin: 0;
+    font-size: 1.4rem;
+}
 
-/****** Hebergements ***********/
+/* Hebergements */
 .hebergements {
     width: 65%;
 }
 
-/****** Populaires ***********/
+.hebergements-cards .card {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 33px;
+    margin-right: 25px;
+}
+
+.hebergements-cards img {
+width: 97%;
+height: 120px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+/* Populaires */
 .populaires {
     width: 32%;
 }
 
 .populaires-title {
+    /*Nécéssaire pour mise en page de la ligne incluant une icone font-awesome*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -301,9 +340,6 @@ header nav ul li:hover a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
