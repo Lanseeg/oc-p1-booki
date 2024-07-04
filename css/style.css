@@ -101,33 +101,42 @@ header nav ul li:hover a {
 }
 
 .search-box{
+    box-sizing: border-box;
     display: inline-flex;
     align-items: center;
-    box-sizing: border-box;
     width: auto;
 }
 
 #map-icon{
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    color: black;
     display: inline-flex;
-    padding: 14px;
-    height: 28px;
-    font-size: 2rem;
-    color: grey;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 20px 20px 20px;
+    height: 52px;
     background-color: var(--main-bg-color);
     border: 1px solid var(--main-bg-color);
     border-radius: 15px 0px 0px 15px;
 }
 
 .search-box input {
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
     outline: none;
     height: 52px;
     margin-left: -5px;
-    border: none;
+    border: 1px solid var(--main-bg-color);
     padding: 10px;
 }
 
 .search-box button {
-    background-color: var(--blue);
+    background-color: var(--main-color);
+    font-size: 1.1rem;
+    font-weight: bold;
     color: white;
     height: 52px;
     border: none;
@@ -136,7 +145,7 @@ header nav ul li:hover a {
     cursor: pointer;
 }
 
-.search-box button .fa-search {
+.search-box button .fa-solid{
     display: none;
 }
 
