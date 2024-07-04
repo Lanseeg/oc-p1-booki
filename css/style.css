@@ -164,33 +164,26 @@ header nav ul li:hover a {
     font-weight: bold;
 }
 
-.filter-content {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.filter-box :hover {
-    transition: background-color 1s;
-    background-color: #7caaee;
-}
-
 .filter-box {
-    margin: 0px 5px;
+    transition: background-color 1s;
     border-radius: 30px;
     border: 2px solid #d8d7d7;
     display: inline-flex;
     align-items: center;
+    font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 15px 10px 15px;
+    margin: 0px 15px 0px 0px;
 }
 
 .filter-box i {
-    padding: 5px 10px 5px 10px;
+    padding: 0px 10px 0px 2px;
 }
 
-.filter-box .text {
-    padding: 0px 10px 0px 0px;
+.filter-bar :hover {
+    transition: background-color 1s;
+    background-color: #cadffc;
 }
 
 /*FIN HEADER*/
