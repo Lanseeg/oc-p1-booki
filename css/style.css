@@ -53,6 +53,7 @@ a {
 }
 
 /*HEADER*/
+
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -165,7 +166,6 @@ header nav ul li:hover a {
 }
 
 .filter-box {
-    transition: background-color 1s;
     border-radius: 30px;
     border: 2px solid #d8d7d7;
     display: inline-flex;
@@ -188,8 +188,26 @@ header nav ul li:hover a {
 
 /*FIN HEADER*/
 
-.info {
-    padding: 0px 0px 15px 0px;
+/*MAIN*/
+
+.info-bar {
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+.info-bar i {
+    box-sizing: border-box;
+    font-size: 0.7rem;
+    color: var(--main-color);
+    margin-right: 10px;
+    padding: 5px 8px 5px 8px;
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+    border: 1px solid #d8d7d7;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-title {
