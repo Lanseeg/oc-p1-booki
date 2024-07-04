@@ -28,22 +28,22 @@ body {
 
 }
 
-p{
+p {
     font-size: 1rem;
     line-height: 1.8rem;
 }
 
-h1{
+h1 {
     font-size: 1.4rem;
     margin-bottom: 0px;
 }
 
-.lead{
+.lead {
     font-size: 1.4rem;
     font-weight: bold;
 }
 
-h2{
+h2 {
     font-size: 1rem;
 }
 
@@ -64,7 +64,7 @@ header #logo {
     width: 70px;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: flex-end;
 
@@ -92,22 +92,24 @@ header nav ul li a {
 }
 
 header nav ul li:hover a {
-    color:  var(--main-color);
+    color: var(--main-color);
 }
 
-.search-bar{
-    padding: 30px 0px 30px 0px;
+.search-bar {
+    padding: 20px 0px 0px 0px;
     box-sizing: border-box;
 }
 
-.search-box{
+.search-box {
     box-sizing: border-box;
     display: inline-flex;
     align-items: center;
     width: auto;
+    padding: 15px 0px 35px 0px;
+
 }
 
-#map-icon{
+#map-icon {
     box-sizing: border-box;
     font-size: 1.2rem;
     color: black;
@@ -145,27 +147,57 @@ header nav ul li:hover a {
     cursor: pointer;
 }
 
-.search-box button .fa-solid{
+.search-box button .fa-solid {
     display: none;
 }
 
 
-.filter-bar{
+.filter-bar {
     display: inline-flex;
     align-items: center;
+    padding: 0px 0px 20px 0px;
 }
 
-.filter-header{
+.filter-header {
+    font-size: 1.2rem;
+    padding: 0px 15px 0px 0px;
+    font-weight: bold;
+}
+
+.filter-content {
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.text{
-    font-size: 1.2rem;
-    font-weight: bold;
+.filter-box :hover {
+    transition: background-color 1s;
+    background-color: #7caaee;
 }
 
-/*FIN HEADER*/ 
+.filter-box {
+    margin: 0px 5px;
+    border-radius: 30px;
+    border: 2px solid #d8d7d7;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+}
+
+.filter-box i {
+    padding: 5px 10px 5px 10px;
+}
+
+.filter-box .text {
+    padding: 0px 10px 0px 0px;
+}
+
+/*FIN HEADER*/
+
+.info {
+    padding: 0px 0px 15px 0px;
+}
 
 .section-title {
     margin: 0;
