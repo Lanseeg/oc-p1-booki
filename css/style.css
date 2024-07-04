@@ -28,13 +28,23 @@ body {
 
 }
 
+p{
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
 h1{
-    font-size: 24px;
+    font-size: 1.4rem;
     margin-bottom: 0px;
 }
 
+.lead{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
 h2{
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 a {
@@ -46,6 +56,7 @@ a {
 #navbar {
     display: flex;
     justify-content: space-between;
+    height: 5.4rem;
 }
 
 header #logo {
@@ -85,22 +96,71 @@ header nav ul li:hover a {
 }
 
 .search-bar{
-    padding: 10px 0px 10px 0px;
+    padding: 30px 0px 30px 0px;
+    box-sizing: border-box;
 }
+
+.search-box{
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: auto;
+}
+
+#map-icon{
+    display: inline-flex;
+    padding: 14px;
+    height: 28px;
+    font-size: 2rem;
+    color: grey;
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--main-bg-color);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.search-box input {
+    outline: none;
+    height: 52px;
+    margin-left: -5px;
+    border: none;
+    padding: 10px;
+}
+
+.search-box button {
+    background-color: var(--blue);
+    color: white;
+    height: 52px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.search-box button .fa-search {
+    display: none;
+}
+
 
 .filter-bar{
     display: inline-flex;
     align-items: center;
 }
 
-.lookUp{
-
+.filter-header{
+    font-size: 1.2rem;
+    font-weight: bold;
 }
+
+.text{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 /*FIN HEADER*/ 
 
 .section-title {
     margin: 0;
-    font-size: 22px;
+    font-size: 1.4rem;
 }
 
 .card {
@@ -222,11 +282,11 @@ header nav ul li:hover a {
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 1.7rem;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 1rem;
     }
 }
 
