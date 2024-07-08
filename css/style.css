@@ -262,27 +262,26 @@ header nav ul li:hover a {
     width: 65%;
 }
 
-.hebergements-cards a {
-    width: 30%;
-    margin-bottom: 20px;
-    padding-bottom: 40px;
-}
-
-/*
-In case of need
-.hebergements-title {
-
-}
-*/
-
-
-.hebergements-cards .card {
+.hebergements-cards {
+    margin-top: 0px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
 
+.hebergements-cards .card{
+    width: 260px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 .hebergements-cards img {
-
+    box-sizing: border-box;
+    width: 100%;
+    height: 115px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -308,6 +307,11 @@ In case of need
     margin-bottom: 5px;
 }
 
+.hebergements .subtitle {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 /* Populaires */
 .populaires {
     width: 32%;
@@ -321,7 +325,7 @@ In case of need
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 35px;
 }
 
 .populaires-cards img {
