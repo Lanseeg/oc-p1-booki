@@ -260,33 +260,29 @@ header nav ul li:hover a {
 /* Hebergements */
 .hebergements {
     width: 65%;
-
 }
 
-.hebergements-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+.hebergements-cards a {
+    width: 30%;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 /*
 In case of need
-.hebergements-title{
+.hebergements-title {
 
 }
 */
 
+
 .hebergements-cards .card {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-between
 
 }
 
+
 .hebergements-cards img {
-    width: 100%;
-    height: 60px;
+
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
