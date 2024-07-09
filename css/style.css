@@ -405,6 +405,29 @@ header nav ul li:hover a {
     padding: 20px;
 }
 
+/*FOOTER*/
+footer {
+    background-color: var(--main-bg-color);
+    display: flex;
+    padding: 25px;
+}
+
+footer .footer-column {
+    width: 30%;
+}
+
+footer .footer-column ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+footer .footer-column ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    line-height: 35px;
+}
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
