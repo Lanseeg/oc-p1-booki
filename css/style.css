@@ -25,6 +25,8 @@ body {
     min-width: 320px;
     max-width: 1440px;
     box-sizing: border-box;
+    margin-left: 40px;
+    margin-right: 40px;
 
 }
 
@@ -271,7 +273,7 @@ header nav ul li:hover a {
 
 }
 
-.hebergements-cards .card{
+.hebergements-cards .card {
     width: 260px;
     box-sizing: border-box;
     margin-top: 15px;
@@ -325,6 +327,7 @@ header nav ul li:hover a {
 
 .populaires-cards .card {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 35px;
 }
 
@@ -362,7 +365,7 @@ header nav ul li:hover a {
     padding: 30px;
 }
 
-.activites .section-title{
+.activites .section-title {
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -457,7 +460,7 @@ footer .footer-column ul li a {
     }
 
     .populaires-cards .card-title {
-        font-size: 1.7rem;
+        font-size: 1rem;
     }
 
     .populaires-cards .card-subtitle {
