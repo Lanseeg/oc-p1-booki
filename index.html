@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="FR-fr">
 
 <head>
     <meta charset="UTF-8">
@@ -17,19 +17,19 @@
 
 <body>
     <div class="main-container">
-        <header>
-            <div id="navbar">
+        <header class="main-header" id="main-header">
+            <div class="navbar" id="navbar">
                 <!-- SEO: Page main H1 -->
                 <h1>
                     <a href="index.html">
-                        <img id="logo" src="images/logo/Booki.png" alt="Logo Booki" title="Booki.com">
+                        <img id="logo" src="images/logo/Booki.png" alt="Logo Booki" translate="no" title="Booki.com">
                         <span hidden>Booki</span>
                     </a>
                 </h1>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Hébergements</a></li>
-                        <li><a href="index.html">Activités</a></li>
+                        <li><a href="#accomodation">Hébergements</a></li>
+                        <li><a href="#activities">Activités</a></li>
                     </ul>
                 </nav>
             </div>
@@ -40,7 +40,7 @@
                 </p>
                 <form class="search-box">
                     <span class id="map-icon"><i class="fa-solid fa-location-dot" style="color: #14223b;"></i></span>
-                    <input type="text" placeholder="Marseille, France">
+                    <input type="search" placeholder="Marseille, France">
                     <button>
                         <span>Rechercher</span>
                         <span><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span>
@@ -70,15 +70,15 @@
 
         </header>
 
-        <main>
+        <main class="main-content">
             <p class="info-bar"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
-            <div class="hebergements-and-populaires">
-                <section class="hebergements">
-                    <div class="hebergements-title">
+            <div class="accomodation-and-popular">
+                <section class="accomodation" id="accomodation">
+                    <div class="accomodation-title">
                         <h2 class="section-title">Hébergements à Marseille</h2><br>
                     </div>
-                    <div class="hebergements-cards">
+                    <div class="accomodation-cards">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/fred-kleber.jpg"
@@ -200,15 +200,15 @@
                             </article>
                         </a>
                     </div>
-                    <span class="subtitle">Afficher plus</span>
+                    <a href="#accomodation" class="display-more-button"><span class="subtitle">Afficher plus</span></a>
                 </section>
 
-                <section class="populaires">
-                    <div class="populaires-title">
+                <section class="populars">
+                    <div class="populars-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-                    <div class="populaires-cards">
+                    <div class="populars-cards">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/emile-guillemot.jpg"
@@ -272,28 +272,30 @@
                     </div>
                 </section>
             </div>
-            <section class="activites">
+            <section class="activities" id="activities">
                 <h2 class="section-title">Activités à Marseille</h2>
-                <div class="activites-cards-container">
-                    <div class="activites-card">
+                <div class="activities-cards-container">
+                    <div class="activities-card">
                         <article>
-                            <img src="./images/activites/reno-laithienne.jpg" alt="Image montrant le vieux port de Marseille">
+                            <img src="./images/activites/reno-laithienne.jpg"
+                                alt="Image montrant le vieux port de Marseille">
                             <h3>Vieux Port</h3>
                         </article>
                     </div>
-                    <div class="activites-card">
+                    <div class="activities-card">
                         <article>
                             <img src="./images/activites/paul-hermann.jpg" alt="Image montrant le Fort de Pomègues">
                             <h3>Fort de Pomègues</h3>
                         </article>
                     </div>
-                    <div class="activites-card">
+                    <div class="activities-card">
                         <article>
-                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image montrant le Parc National des Calanques">
+                            <img src="./images/activites/kilyan-sockalingum.jpg"
+                                alt="Image montrant le Parc National des Calanques">
                             <h3>Parc National des Calanques</h3>
                         </article>
                     </div>
-                    <div class="activites-card">
+                    <div class="activities-card">
                         <article>
                             <img src="./images/activites/florian-wehde.jpg" alt="Image montrant Notre-Dame-de-la-Garde">
                             <h3>Notre-Dame-de-la-Garde</h3>
@@ -304,7 +306,7 @@
             </section>
         </main>
 
-        <footer>
+        <footer class="main-footer" id="main-footer">
             <div class="footer-column">
                 <h2>A propos</h2>
                 <ul>
