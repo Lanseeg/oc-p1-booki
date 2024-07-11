@@ -3,7 +3,7 @@
     /*Colors palette*/
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
-    --filter-bg-color: #c2c5c5;
+    --filter-bg-color: #dadada;
     --filter-border-color: #c4c0c0;
     --white: #ffffff;
     --black: #000000;
@@ -321,30 +321,30 @@ header nav ul li:hover a {
 }
 
 /* Populaires */
-.populars {
+.popular {
     width: 32%;
 }
 
-.populars-title {
+.popular-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.populars-cards .card {
+.popular-cards .card {
     display: flex;
     flex-wrap: wrap;
     margin-top: 35px;
 }
 
-.populars-cards img {
+.popular-cards img {
     width: 33%;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.populars-cards .card-content {
+.popular-cards .card-content {
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -352,22 +352,23 @@ header nav ul li:hover a {
     justify-content: space-between;
 }
 
-.populars-cards .card-title {
+.popular-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
-.populars-cards .card-subtitle {
+.popular-cards .card-subtitle {
     margin: 0;
 }
 
-.populars-cards .card-rating {
+.popular-cards .card-rating {
     margin-bottom: 5px;
 }
 
 /*ACTIVITES*/
 .activities {
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
 
 .activities .section-title {
@@ -379,36 +380,47 @@ header nav ul li:hover a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
 }
 
-.activities-cards-container .activities-card {
-    height: 100%;
-    width: 22%;
+.activities-cards-container a {
+    flex: 1 1 22%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 25px;
     box-shadow: 0px 0px 10px 0px var(--filter-bg-color);
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.activities-card{
     border-radius: 25px;
 }
 
-.activities-cards-container .activities-card article img {
+.activities-card article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.activities-card article img {
     width: 100%;
-    height: 350px;
+    height: 360px;
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
 }
 
-.activities-cards-container .activities-card article {
-    height: 100%;
-    border-radius: 25px;
-}
-
-.activities-cards-container .activities-card article h3 {
+.activities-card article h3 {
     margin: 0px;
     padding: 20px;
     font-size: 1rem;
+    flex-grow: 1; /* Assure que le h3 prend tout l'espace vertical disponible */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre le texte à l'intérieur du h3 */
 }
 
 /*FOOTER*/
@@ -434,41 +446,48 @@ footer .footer-column ul li a {
 }
 
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
+/* RESPONSIVE */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
+
+    /*1024 ACCOMODATION & POPULAR*/
+    /*1024 ACCOMODATION*/
+    .accomodation-and-popular {
         flex-direction: column;
     }
 
-    .hebergements {
+    .accomodation {
         width: 100%;
     }
 
-    .populaires {
+    /*1024 POPULAR*/
+    .popular {
         width: 100%;
         margin-top: 50px;
     }
 
-    .populaires-cards {
+    .popular-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .populaires-cards a {
+    .popular-cards a {
         width: 30%;
     }
 
-    .populaires-cards .card-title {
+    .popular-cards .card-title {
         font-size: 1rem;
     }
 
-    .populaires-cards .card-subtitle {
+    .popular-cards .card-subtitle {
         font-size: 1rem;
     }
+
+    /*1024 ACTIVITIES*/
+
 }
 
 /* Small devices (phones, less than 768px) */
