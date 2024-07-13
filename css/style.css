@@ -368,7 +368,7 @@ header nav ul li:hover a {
 /*ACTIVITES*/
 .activities {
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -440,6 +440,8 @@ footer {
 
 footer .footer-column {
     width: 30%;
+    flex-grow: 1;
+    padding-left: 1%;
 }
 
 footer .footer-column ul {
