@@ -181,24 +181,33 @@ nav {
 
 .filter-box {
     border-radius: 30px;
+    flex: none;
     border: 2px solid var(--filter-bg-color);
     display: inline-flex;
     align-items: center;
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 10px 10px 5px;
     margin: 5px 15px 5px 0px;
 }
 
 .filter-box i {
-    padding: 0px 10px 0px 2px;
+    padding: 0px 10px 0px 10px;
 }
 
-.filter-bar :hover {
+.filter-box-container :hover {
     transition: background-color 1s;
     background-color: var(--pale-blue);
 }
+
+.filter-text {
+    margin-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    text-wrap: nowrap;
+}
+
 
 /*FIN HEADER*/
 
@@ -368,7 +377,7 @@ nav {
     margin-bottom: 5px;
 }
 
-/*ACTIVITES*/
+/*ACTIVITIES*/
 .activities {
     padding-top: 30px;
     padding-bottom: 50px;
@@ -390,7 +399,7 @@ nav {
 
 .activities-cards-container a {
     flex: 1 1 22%;
-    max-width: 22%;
+    max-width: 316px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -403,6 +412,7 @@ nav {
 
 .activities-card {
     border-radius: 25px;
+    max-width: 316px;
 }
 
 .activities-card article {
@@ -467,6 +477,11 @@ nav {
 @media (max-width: 1024px) {
 
     /*1024 ACCOMODATION & POPULAR*/
+    .filter-box {
+        margin-right: 5px;
+    }
+
+
     /*1024 ACCOMODATION*/
     .accomodation-and-popular {
         flex-direction: column;
@@ -515,7 +530,7 @@ nav {
         padding: 25px;
         width: 100%;
     }
-    
+
     /*1024 FOOTER*/
 
     .footer-column {
@@ -523,18 +538,18 @@ nav {
         flex-grow: 1;
         padding-left: 0%;
     }
-    
+
     .footer-column ul {
         list-style-type: none;
         padding: 0px;
     }
-    
+
     .footer-column ul li a {
         color: var(--black);
         text-decoration: none;
         line-height: 35px;
     }
-    
+
 
 
 }
@@ -559,6 +574,9 @@ nav {
         width: 100%;
     }
 
+    /*768 MAIN HEADER*/
+    /*768 MENU NAVBAR*/
+
     .navbar {
         display: flex;
         flex-direction: column;
@@ -578,16 +596,16 @@ nav {
         width: 100%;
         text-align: center;
         margin: 0px;
-        padding-top: 35px;
+        padding-top: 30px;
     }
 
     #logo {
-        height: 72px;
+        height: 55px;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px 0px 20px 0px;
+        padding: 20px 0px 10px 0px;
         margin: 0px;
     }
 
@@ -609,7 +627,7 @@ nav {
         justify-content: space-between;
         align-items: flex-end;
         width: 100%;
-        height: 5.5rem;
+        height: 5rem;
         padding: 0px;
         margin: 0px;
     }
@@ -633,7 +651,7 @@ nav {
         text-align: center;
         padding: 0px;
         margin: 0px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         padding-bottom: 20px;
     }
 
@@ -651,11 +669,14 @@ nav {
         padding-top: 8px;
     }
 
+    /*768 SEARCH BAR*/
+
     .search-bar {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        padding: 15px 0px 35px 0px;
     }
 
     #map-icon {
@@ -666,6 +687,12 @@ nav {
         display: flex;
         flex-wrap: wrap;
         padding: 15px 0px 0px 20px;
+    }
+
+    .search-box {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px 0px 0px;
     }
 
     .search-box button {
@@ -682,6 +709,63 @@ nav {
         display: inline-flex;
         width: 20px;
         height: 20px;
+    }
+
+    /*768 FILTERS*/
+
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        padding-bottom: 0px;
+    }
+
+    .filter-header {
+        width: 100%;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .filter-box-container {
+        width: 100%;
+        margin: 0px 10px 0px 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filter-box {
+        height: 50px;
+        width: 165px;
+        padding: 10px 10px 10px 15px;
+        margin: 5px 10px 20px 0px;
+        font-size: 1rem;
+    }
+
+    .filter-box i {
+        padding-left: 3px;
+        flex-wrap: nowrap;
+        font-size: 1.2rem;
+    }
+
+    .filter-text {
+        margin-left: 6px;
+        margin-right: 0px;
+        display: inline-flex;
+        text-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+
+    /*END OF 768 HEADER*/
+    /*768 MAIN CONTENT*/
+    /*768 INFO-BAR*/
+
+    .info-bar {
+
     }
 
     #accomodation {
