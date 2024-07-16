@@ -830,6 +830,30 @@ nav {
     /*768 ACCOMODATION (HERBERGEMENTS)*/
     .accomodation {
         background-color: var(--white);
+        padding: 0px 0px 0px 0px;
+    }
+
+    .accomodation-cards {
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .accomodation-cards>a {
+        width: 100%;
+    }
+    
+    .accomodation-cards .card {
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    
+    .accomodation-cards img {
+        width: 100%;
+        height: 115px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 
 
