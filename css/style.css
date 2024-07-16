@@ -213,17 +213,24 @@ nav {
 
 /*MAIN*/
 /*INFO-BAR*/
-.info-bar {
-    padding-bottom: 20px;
+.info-bar-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
 }
 
-.info-bar i {
+.info-bar {
+    padding-right: 0px;
+    padding-left: 10px;
+}
+
+.info-bar-icon {
     font-size: 0.7rem;
     color: var(--main-color);
-    margin-right: 10px;
+    margin-right: 0px;
     padding: 5px 8px 5px 8px;
-    width: auto;
-    height: auto;
+    width: 25px;
+    height: 25px;
     border-radius: 100%;
     border: 1px solid var(--filter-bg-color);
     display: inline-flex;
@@ -266,7 +273,7 @@ nav {
 }
 
 .accomodation-and-popular section {
-    background-color: var(--main-bg-color);
+
     border-radius: 20px;
     padding: 30px;
 }
@@ -278,6 +285,7 @@ nav {
 
 /* Hebergements */
 .accomodation {
+    background-color: var(--main-bg-color);
     width: 65%;
 }
 
@@ -335,6 +343,7 @@ nav {
 /* Populaires */
 .popular {
     width: 32%;
+    background-color: var(--main-bg-color);
 }
 
 .popular-title {
@@ -762,12 +771,6 @@ nav {
 
     /*END OF 768 HEADER*/
     /*768 MAIN CONTENT*/
-    /*768 INFO-BAR*/
-
-    .info-bar {
-
-    }
-
     #accomodation {
         order: 2;
     }
@@ -776,4 +779,47 @@ nav {
         order: 1;
     }
 
+    /*768 INFO-BAR*/
+
+    .info-bar-container {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .info-bar {
+        padding-left: 12px;
+    }
+
+    /*768 accomodation-and-popular*/
+
+    .accomodation-and-popular section {
+        border-radius: 0px;
+    }
+
+    .popular {
+        margin-top: 15px;
+        padding: 0px;
+        border-radius: 0px;
+    }
+
+    .popular-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popular-cards a {
+        width: 330px;
+    }
+
+    .card-content {
+        padding-top: 0px;
+    }
+
+    /*768 ACCOMODATION (HERBERGEMENTS)*/
+    .accomodation {
+        background-color: var(--white);
+    }
+
+
+
+    /*END OF 768 RESOLUTION*/
 }
