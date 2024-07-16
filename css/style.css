@@ -793,12 +793,20 @@ nav {
 
     .accomodation-and-popular section {
         border-radius: 0px;
+        padding: 30px 20px 30px 20px;
     }
 
     .popular {
-        margin-top: 15px;
-        padding: 0px;
+        padding: 0px 0px 50px 0px;
+        margin: 15px 0px 0px 0px;
         border-radius: 0px;
+        width: 100%;
+    }
+
+    .popular-title {
+        margin: 0px 0px 16px 0px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
     }
 
     .popular-cards {
@@ -807,7 +815,12 @@ nav {
     }
 
     .popular-cards a {
-        width: 330px;
+        width: 100%;
+    }
+
+    .popular-cards .card {
+        margin: 0px 0px 15px 0px;
+        width: 100%;
     }
 
     .card-content {
