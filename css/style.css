@@ -266,14 +266,13 @@ nav {
 }
 
 /*END OF GENERAL CARDS SETUP*/
-/****** Hebergements And Populaires ***********/
+/****** Hebergements & Populaires ***********/
 .accomodation-and-popular {
     display: flex;
     justify-content: space-between;
 }
 
 .accomodation-and-popular section {
-
     border-radius: 20px;
     padding: 30px;
 }
@@ -450,7 +449,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Centre le texte à l'intérieur du h3 */
 }
 
 /*FOOTER*/
@@ -544,7 +542,6 @@ nav {
 
     .footer-column {
         width: 30%;
-        flex-grow: 1;
         padding-left: 0%;
     }
 
@@ -562,6 +559,7 @@ nav {
 
 }
 
+/*                 SMARTPHONE              */
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767px) {
     body {
@@ -765,7 +763,6 @@ nav {
         margin-right: 0px;
         display: inline-flex;
         text-wrap: nowrap;
-        flex-wrap: nowrap;
     }
 
     /*END OF 768 HEADER*/
@@ -840,9 +837,7 @@ nav {
     }
 
     .accomodation-cards .card {
-        width: 100%;
         margin-top: 0px;
-        margin-bottom: 15px;
     }
 
     .accomodation-cards>a {
@@ -850,10 +845,7 @@ nav {
     }
 
     .accomodation-cards img {
-        width: 100%;
         height: 115px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
     }
 
     /*768 ACTIVITIES (ACTIVITES)*/
@@ -898,7 +890,6 @@ nav {
 
     .footer-column {
         width: 100%;
-        flex-grow: 1;
         padding-left: 0%;
         padding-bottom: 20px;
     }
