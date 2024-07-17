@@ -5,6 +5,7 @@
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #dadada;
     --filter-border-color: #c4c0c0;
+    --box-shadow-hover: #E2E2E2;
     --white: #ffffff;
     --black: #000000;
     --pale-blue: #cadffc;
@@ -93,10 +94,12 @@ nav {
 }
 
 .menu li:hover {
+    transition: border-color 1s;
     border-color: var(--main-color);
 }
 
 .menu li a {
+    transition: color 1s;
     color: var(--black);
     text-decoration: none;
 }
@@ -305,6 +308,11 @@ nav {
     width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
+
+}
+
+.accomodation-cards article:hover {
+    box-shadow: 5px 5px 5px 0px var(--box-shadow-hover);
 }
 
 .accomodation-cards img {
@@ -357,8 +365,13 @@ nav {
     margin-top: 35px;
 }
 
+.popular-cards .card:hover {
+    box-shadow: 5px 5px 5px 0px var(--box-shadow-hover);
+}
+
 .popular-cards img {
     width: 33%;
+    max-width: 125px;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -416,6 +429,11 @@ nav {
     overflow: hidden;
     text-decoration: none;
     margin-bottom: 2%;
+}
+
+.activities-cards-container a:hover {
+    transition: box-shadow 0.4s;
+    box-shadow: 0px 4px 15px 0px var(--box-shadow-hover);
 }
 
 .activities-card {
@@ -511,11 +529,20 @@ nav {
     }
 
     .popular-cards a {
-        width: 30%;
+        width: 32%;
+    }
+
+    .popular-cards img {
+        width: 33%;
+        height: 160px;
     }
 
     .popular-cards .card-title {
         font-size: 1rem;
+    }
+
+    .popular-cards .card-content {
+        padding: 0px 0px 0px 10px;
     }
 
     .popular-cards .card-subtitle {
@@ -736,19 +763,23 @@ nav {
 
     .filter-box-container {
         width: 100%;
-        margin: 0px 10px 0px 10px;
+        margin: 0px 5px 0px 5px;
+        padding: 0px 0px 0px 0px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
+        align-content: center;
+        row-gap: 18px;
+        column-gap: 3px;
     }
 
     .filter-box {
         height: 50px;
         width: 165px;
         padding: 10px 10px 10px 15px;
-        margin: 5px 10px 20px 0px;
+        margin: 0px 0px 0px 0px;
         font-size: 1rem;
     }
 
@@ -768,6 +799,10 @@ nav {
     /*END OF 768 HEADER*/
     /*768 MAIN CONTENT*/
 
+    .main-content {
+        width: 100%;
+    }
+
     #accomodation {
         order: 2;
     }
@@ -779,7 +814,7 @@ nav {
     /*768 INFO-BAR*/
 
     .info-bar-container {
-        padding: 0px 20px 0px 20px;
+        padding: 15px 20px 0px 20px;
     }
 
     .info-bar {
@@ -788,9 +823,14 @@ nav {
 
     /*768 accomodation-and-popular*/
 
+    .accomodation-and-popular {
+        width: 100%;
+    }
+
     .accomodation-and-popular section {
         border-radius: 0px;
         padding: 30px 20px 30px 20px;
+        width: 100%;
     }
 
     .popular {
@@ -813,11 +853,14 @@ nav {
 
     .popular-cards a {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .popular-cards .card {
         margin: 0px 0px 15px 0px;
-        width: 100%;
+        flex-grow: 1;
+        max-width: 450px;
     }
 
     .card-content {
@@ -832,6 +875,7 @@ nav {
 
     .accomodation-cards {
         flex-direction: column;
+        align-items: center;
         padding: 0px 0px 0px 0px;
         margin: 0px 0px 0px 0px;
     }
@@ -840,8 +884,9 @@ nav {
         margin-top: 0px;
     }
 
-    .accomodation-cards>a {
+    .accomodation-cards a {
         width: 100%;
+        max-width: 450px;
     }
 
     .accomodation-cards img {
@@ -870,16 +915,22 @@ nav {
         width: 100%;
     }
 
-    .activities-cards-container>a {
+    .activities-cards-container a {
+        display: flex;
         margin-bottom: 17px;
+        width: 100%;
     }
 
     .activities-card article img {
-        width: 360px;
-        height: 150px;
-        object-fit: cover;
+        width: 100%;
+        height: 160px;
+        min-width: 316px;
+        object-fit: cover; /*!*/
         border-radius: 25px 25px 0px 0px;
+    }
 
+    .activities-card {
+        width: 100%;
     }
 
     /*768 FOOTER*/
