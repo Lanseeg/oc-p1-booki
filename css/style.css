@@ -1,6 +1,6 @@
 /****** General ***********/
 :root {
-    /*Colors palette*/
+    /*Color palette*/
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #dadada;
@@ -23,19 +23,17 @@
 body {
     padding: 0px;
     margin: 0px;
-    min-width: fit-content;
     display: flex;
     justify-content: center;
 }
 
 .main-container {
+    flex: 1 1 auto;
     max-width: 1440px;
-    margin-left: 40px;
-    margin-right: 40px;
-    min-width: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    min-width: 320px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
 }
 
 p {
@@ -837,7 +835,6 @@ nav {
         padding: 0px 0px 50px 0px;
         margin: 15px 0px 0px 0px;
         border-radius: 0px;
-        width: 100%;
     }
 
     .popular-title {
@@ -899,10 +896,6 @@ nav {
         padding: 30px 0px 45px 0px;
     }
 
-    .accomodation-and-popular .activities {
-        padding: 0px 0px 0px 0px;
-    }
-
     .activities .section-title {
         padding: 0px 0px 30px 10px;
     }
@@ -932,6 +925,7 @@ nav {
     .activities-card {
         width: 100%;
     }
+
 
     /*768 FOOTER*/
 
