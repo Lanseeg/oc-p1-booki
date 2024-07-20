@@ -1,7 +1,7 @@
-/****** General ***********/
+/****** BOOKI STYLE SHEET ***********/
 :root {
     /*Color palette*/
-    --main-color: #0065FC;
+    --main-color: #0065fc;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #dadada;
     --filter-border-color: #c4c0c0;
@@ -33,7 +33,6 @@ body {
     min-width: 320px;
     margin-left: 20px;
     margin-right: 20px;
-    
 }
 
 p {
@@ -209,7 +208,6 @@ nav {
     text-wrap: nowrap;
 }
 
-
 /*FIN HEADER*/
 
 /*MAIN*/
@@ -345,7 +343,7 @@ nav {
     font-size: 1.2rem;
 }
 
-/* Populaires */
+/*POPULAR - Populaires */
 .popular {
     width: 32%;
     background-color: var(--main-bg-color);
@@ -396,7 +394,7 @@ nav {
     margin-bottom: 5px;
 }
 
-/*ACTIVITIES*/
+/*ACTIVITIES - activités*/
 .activities {
     padding-top: 30px;
     padding-bottom: 50px;
@@ -419,7 +417,6 @@ nav {
 .activities-cards-container a {
     flex: 1 1 22%;
     max-width: 316px;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 25px;
@@ -461,7 +458,6 @@ nav {
     padding: 20px;
     font-size: 1rem;
     flex-grow: 1;
-    /* Assure que le h3 prend tout l'espace vertical disponible */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -598,7 +594,6 @@ nav {
     .main-container {
         margin-left: 0px;
         margin-right: 0px;
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -627,16 +622,16 @@ nav {
         width: 100%;
         text-align: center;
         margin: 0px;
-        padding-top: 30px;
+        padding-top: 15px;
     }
 
     #logo {
-        height: 55px;
+        height: 44px;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px 0px 10px 0px;
+        padding: 10px 0px 10px 0px;
         margin: 0px;
     }
 
@@ -668,7 +663,7 @@ nav {
         display: flex;
         justify-content: center;
         width: 100%;
-        padding: 0px;
+        padding: 0px 0px 0px 20px;
         margin: 0px;
         border-bottom: 4px solid var(--main-bg-color);
         border-top: 0px;
@@ -687,7 +682,7 @@ nav {
     }
 
     p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 1.8rem;
     }
 
@@ -715,15 +710,18 @@ nav {
     }
 
     .search-bar p {
-        display: flex;
         flex-wrap: wrap;
-        padding: 15px 0px 0px 20px;
+        padding: 0px 20px 0px 20px;
     }
 
     .search-box {
-        display: flex;
         justify-content: center;
-        padding: 10px 0px 0px 0px;
+        padding: 10px 17px 0px 10px;
+
+    }
+
+    .search-box input {
+        width: 94%;
     }
 
     .search-box button {
@@ -890,7 +888,7 @@ nav {
         height: 115px;
     }
 
-    /*768 ACTIVITIES (ACTIVITES)*/
+    /*768 ACTIVITIES (Activités)*/
 
     .activities {
         padding: 30px 0px 45px 0px;
@@ -905,27 +903,30 @@ nav {
         justify-content: center;
         align-items: center;
         padding-bottom: 0px;
-        width: 100%;
     }
 
     .activities-cards-container a {
-        display: flex;
         margin-bottom: 17px;
-        width: 100%;
-    }
-
-    .activities-card article img {
-        width: 100%;
-        height: 160px;
-        min-width: 316px;
-        object-fit: cover; /*!*/
-        border-radius: 25px 25px 0px 0px;
+        width: 95%;
+        min-width: 260px;
+        max-width: 400px;
     }
 
     .activities-card {
-        width: 100%;
+        min-width: 260px;
+        max-width: 400px;
     }
 
+
+    .activities-article {
+        flex: 1 1 100%;
+    }
+
+    .activities-card article img {
+        object-fit: cover;
+        width: 100%;
+        height: 145px;
+    }
 
     /*768 FOOTER*/
 
